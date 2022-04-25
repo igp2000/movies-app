@@ -1,0 +1,84 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "ignorePatterns": ["node_modules", "dist", "build"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+ //"parser": "babel-eslint",
+ "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": [
+        "@babel/preset-react"
+      ]
+    }
+  },
+  "plugins": ["react", "prettier", "import"],
+  "rules": {
+    "indent": ["error", 2],
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "linebreak-style": [0, "unix"],
+    "quotes": ["error", "single"],
+    //"semi": ["error", "never"],
+    "semi": ["error", "always"],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": 0,
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/order": [
+      2,
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}
+/*
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb/base"],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-console": "off", // разрешаем console.log
+    "no-plusplus": "off", // ++
+    "eol-last": "off", // в конце файла обязательна пустая строка
+    //"max-len": ["error", 150] // максимальная длина строки
+    "no-tabs": "off", // разрешаем использование tab для отступов
+    "no-alert": "error", // разрешаем alert
+    "indent": [2, "tab"] // разрешаем толко 2 прообела или 2 таба
+  }
+}
+*/

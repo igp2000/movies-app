@@ -1,0 +1,8 @@
+/node_modules
+/.idea
+/.git
+.eslintignore
+.eslintrc
+.gitignore
+.prettierrc
+package.json
