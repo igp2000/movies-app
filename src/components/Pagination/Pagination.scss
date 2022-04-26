@@ -1,0 +1,20 @@
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.pagination .ant-pagination-item-active {
+  border: 1px solid #1890ff;
+  border-radius: 4px;
+  background: #1890ff;
+}
+
+.pagination .ant-pagination-item-active A,
+.pagination .ant-pagination-item-active-custom A:hover {
+  color: #ffffff;
+}
+
+.pagination .ant-pagination-item-active > A:hover {
+  background: #9ed0ff;
+}
