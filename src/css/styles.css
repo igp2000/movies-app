@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"), local("Inter-Regular"), url("../../public/fonts/Inter-Regular.woff2") format("woff2"),
+    url("../../public/fonts/Inter-Regular.woff") format("woff"),
+    url("../../public/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+HTML,
+BODY {
+  height: 100%;
+  background-color: #f7f7f7 !important;
+}
+
+BODY {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 1010px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1010px) {
+  #root {
+    width: 100%;
+  }
+}
