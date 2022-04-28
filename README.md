@@ -1,3 +1,3 @@
 # movies-app
 
-https://movies-app-one-gold.vercel.app
+https://movies-app-rho-two.vercel.app
